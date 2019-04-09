@@ -19,6 +19,8 @@ import loadPrivacy from 'bundle-loader?lazy!../../pages/privacy';
 import loadProfile from 'bundle-loader?lazy!../../pages/profile';
 import loadTypography from 'bundle-loader?lazy!../../pages/typography';
 import loadTables from 'bundle-loader?lazy!../../pages/tables';
+import loadOjam from 'bundle-loader?lazy!../../pages/ojam';
+import loadUsers from 'bundle-loader?lazy!../../pages/users';
 import loadButtons from 'bundle-loader?lazy!../../pages/buttons';
 import loadNotifications from 'bundle-loader?lazy!../../pages/notifications';
 import loadCharts from 'bundle-loader?lazy!../../pages/charts';
@@ -41,6 +43,8 @@ const PrivacyBundle = Bundle.generateBundle(loadPrivacy);
 const ProfileBundle = Bundle.generateBundle(loadProfile);
 const TypographyBundle = Bundle.generateBundle(loadTypography);
 const TablesBundle = Bundle.generateBundle(loadTables);
+const OjamBundle = Bundle.generateBundle(loadOjam);
+const UsersBundle = Bundle.generateBundle(loadUsers);
 const ButtonsBundle = Bundle.generateBundle(loadButtons);
 const NotificationsBundle = Bundle.generateBundle(loadNotifications);
 const ChartsBundle = Bundle.generateBundle(loadCharts);
@@ -79,6 +83,8 @@ class Layout extends React.Component {
               <Route path="/app/profile" exact component={ProfileBundle} />
               <Route path="/app/typography" exact component={TypographyBundle} />
               <Route path="/app/tables" exact component={TablesBundle} />
+              <Route path="/app/ojam" exact component={OjamBundle} />
+              <Route path="/app/users" exact component={UsersBundle} />
               <Route path="/app/notifications" exact component={NotificationsBundle} />
               <Route path="/app/components/buttons" exact component={ButtonsBundle} />
               <Route path="/app/components/charts" exact component={ChartsBundle} />

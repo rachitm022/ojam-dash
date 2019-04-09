@@ -37,6 +37,16 @@ const Sidebar = () => (
         glyph="notifications"
       />
       <LinksGroup
+        header="Ojam"
+        headerLink="/app/ojam"
+        glyph="tables"
+      />
+      <LinksGroup
+        header="Users"
+        headerLink="/app/users"
+        glyph="tables"
+      />
+      <LinksGroup
         header="Components"
         headerLink="/app/components"
         childrenLinks={[

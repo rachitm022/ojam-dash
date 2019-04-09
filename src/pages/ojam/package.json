@@ -1,0 +1,6 @@
+{
+  "name": "ojam",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ojam.js"
+}
